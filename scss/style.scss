@@ -126,6 +126,30 @@ p {
     opacity: 0.8;
   }
 }
+h1, .h1, h2, .h2, h3, .h3 {
+  @include clearfix;
+}
+.h1, h1 {
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin: 20px 0;
+  font-family: RobotoBold, Arial, sans-serif;
+  font-weight: bold;
+  &.dotted {
+    &:before {
+      top: 10px;
+    }
+  }
+}
+.h2, h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  &.dotted {
+    &:before {
+      top: 10px;
+    }
+  }
+}
 header {
   @include clearfix;
   .logo {
@@ -158,33 +182,7 @@ header {
         font-size: 2.4rem;
         line-height: 40px;
         text-align: center;
-        margin: 20px 0;
-        
-    }
-  }
-}
-h1, .h1, h2, .h2, h3, .h3 {
-  //font-family: RobotoBold;
-  @include clearfix;
-}
-.h1, h1 {
-  font-size: 2rem;
-  line-height: 1.2em;
-  margin: 20px 0;
-  font-family: RobotoBold, Arial, sans-serif;
-  font-weight: bold;
-  &.dotted {
-    &:before {
-      top: 10px;
-    }
-  }
-}
-.h2, h2 {
-  font-size: 1.3rem;
-  margin: 10px 0;
-  &.dotted {
-    &:before {
-      top: 10px;
+        margin: 20px 0;            
     }
   }
 }
