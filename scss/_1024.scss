@@ -1,0 +1,35 @@
+@media (min-width: 1024px) {
+  header {
+    .contact {
+      margin: 0 auto 200px;
+    }
+  }
+  section {
+    &.sixth {
+      .product_list {
+        .product {
+          .img {
+            width: 35%;
+            img {
+
+            }
+          }
+          .txt {
+            width: 65%;
+            .title {
+
+            }
+            .desc {
+              p {
+
+              }
+              .price {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
