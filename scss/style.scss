@@ -132,7 +132,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 .h1, h1 {
     font-size: 2rem;
     line-height: 1.2em;
-    margin: 20px 0;
+    padding: 20px 0;
     font-family: RobotoBold, Arial, sans-serif;
     font-weight: bold;
     &.dotted {
@@ -143,24 +143,45 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 .h2, h2 {
     font-size: 1.3rem;
-    margin: 10px 0;
+    padding: 10px 0;
     &.dotted {
         &:before {
             top: 10px;
         }
     }
 }
+.center {
+    text-align: center;
+}
+.btns {
+    @include clearfix;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.btn {
+		width: 220px;
+		margin-bottom: 10px;
+		&:first-child {
+			margin-bottom: 20px;
+		}
+	}
+}
+.scroll_down {
+	@include size(29px 28px);
+	background-image: url(../img/scroll-down.png);
+	margin: 30px auto 0;
+}
 header {
-  @include clearfix;
+	@include clearfix;
+	padding: 10px 0 30px;
   .logo {
       @include size(auto);
       @include clearfix;
-	  margin-top: 10px;
         img {
             @include size(40% auto);
             max-width: 224px;
             float: left;
-            margin-top: 1px;
         }
         .slogan {
             float: right;
@@ -187,54 +208,28 @@ header {
     }
   }
 }
-.subheader {
-    line-height: 1em;
-}
-.center {
-    text-align: center;
-}
-.dotted {
-    padding-left: 17px;
-    &:before {
-        background-color: #2bb14d!important;
-        display: block;
-        float: left;
-        height: 8px;
-        left: -15px;
-        margin-right: -10px;
-        position: relative;
-        top: 12px;
-        width: 8px;
-        content: ' ';
-    }
-}
-.btns {
-    @include clearfix;
-    text-align: center;
-    max-width: 380px;
-    margin: 0 auto 10px;
-    .btn {
-        float: left;
-        padding: 9px;
-        &:last-child {
-            float: right;
-        }
-    }
+#first {
+	background-image: url(../img/first_block_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 20px;
+	h1, .h2, div, p {
+		color: #ffffff;
+	}
+	.h2 {
+		padding-bottom: 20px;
+		font-size: 1.6em;
+		line-height: 1.3em;
+	}
+	h1 {
+		& + div {
+			font-size: 1.2em;
+			line-height: 1.6em;
+			margin-bottom: 30px;
+		}
+	}
 }
 section {
-  &.first {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    h1 {
-      margin: 0 0 10px;
-    }
-    .h2 {
-      margin: 0 0 30px;
-    }
-    .subheader {
-      margin-bottom: 30px;
-    }
-  }
   &.second {
     .circles {
       display: flex;

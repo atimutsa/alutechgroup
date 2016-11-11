@@ -1,6 +1,4 @@
-<?php
-$tel = "8-800-707-74-31";
-?>
+<?php $tel = "8-800-707-74-31"; ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -12,13 +10,12 @@ $tel = "8-800-707-74-31";
     <title>Алюминиевые рольставни по цене от 2155р. за изделие. Секционные ворота.</title>
     <meta name="description" content="Алюминиевые рольставни, секционные и рулонные ворота от производителя Alutech - официального партнера компании Жалюзи.РФ"/>
     <link rel="stylesheet" type="text/css" href="/css/responsive-tables.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="/css/chocolat.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png"/>
-    <script src="http://www.alutech-group.com/app/calc/calcLoader.js"></script>
 </head>
 
 <body>
@@ -35,15 +32,18 @@ $tel = "8-800-707-74-31";
         </div>
     </header>
 </section>
-<section class="wrap first">
-    <div class="h2 center">Вам важна безопасность дома и семьи?</div>
-    <h1 class="center">Закажите оригинальные рольставни АЛЮТЕХ</h1>
-    <div class="subheader center">Надежная защита от взлома. Бесплатная установка.</div>
-    <div class="btns">
-        <a href="" class="btn blue" data-target="calc">Рассчитать цену</a>
-        <a href="" class="btn green pop_up" data-target="zamer">Бесплатный замер</a>
+<section class="wrap">
+    <div id="first">
+		<div class="h2 center">Вам важна безопасность дома и семьи?</div>
+		<h1 class="center">Закажите оригинальные рольставни АЛЮТЕХ</h1>
+		<div class="center">Надежная защита от взлома. Бесплатная установка.</div>
+		<div class="btns">
+			<a href="" class="btn blue" data-target="calc">Рассчитать цену</a>
+			<a href="" class="btn green pop_up" data-target="zamer">Бесплатный замер</a>
+		</div>
+		<p class="center">Оставьте заявку на бесплатный замер</p>
+   		<div class="scroll_down"></div>
     </div>
-    <p class="center">Оставьте заявку на бесплатный замер</p>
 </section>
 <section class="wrap second">
     <div class="h1 center">Закажите рольставни легендарного качества</div>
@@ -345,9 +345,9 @@ $tel = "8-800-707-74-31";
     </form>
 </div>
 </body>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.alutech-group.com/app/calc/calcLoader.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="/js/circle-progress.min.js"></script>
 <script type="text/javascript" src="/js/responsive-tables.js"></script>
 <script type="text/javascript" src="/js/jquery.chocolat.js"></script>

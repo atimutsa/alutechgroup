@@ -1,13 +1,18 @@
 @media (min-width: 680px) {
-  header {
-      .logo {
-          .slogan {
-              font-size: 1.3em;
-              line-height: 1.2em;
-              float: left
-          }
-      }
-      .contact {
-      }
-  }
+	header {
+		.logo {
+			.slogan {
+				font-size: 1.3em;
+				line-height: 1.2em;
+				float: left
+			}
+		}
+	}
+	#first {
+		padding: 55px 20px 35px;
+		h1 {
+			font-size: 2.8rem;
+			line-height: 1.4em;
+		}
+	}
 }

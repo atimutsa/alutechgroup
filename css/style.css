@@ -205,7 +205,7 @@ h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
 .h1, h1 {
   font-size: 2rem;
   line-height: 1.2em;
-  margin: 20px 0;
+  padding: 20px 0;
   font-family: RobotoBold, Arial, sans-serif;
   font-weight: bold; }
   .h1.dotted:before, h1.dotted:before {
@@ -213,92 +213,89 @@ h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
 
 .h2, h2 {
   font-size: 1.3rem;
-  margin: 10px 0; }
+  padding: 10px 0; }
   .h2.dotted:before, h2.dotted:before {
     top: 10px; }
-
-header::after {
-  clear: both;
-  content: "";
-  display: table; }
-header .logo {
-  height: auto;
-  width: auto;
-  margin-top: 10px; }
-  header .logo::after {
-    clear: both;
-    content: "";
-    display: table; }
-  header .logo img {
-    height: auto;
-    width: 40%;
-    max-width: 224px;
-    float: left;
-    margin-top: 1px; }
-  header .logo .slogan {
-    float: right;
-    width: 60%;
-    max-width: 280px;
-    padding-left: 10px;
-    font-size: 0.8em;
-    line-height: 1.2em; }
-header .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  header .contact .phone {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 2.4rem;
-    line-height: 40px;
-    text-align: center;
-    margin: 20px 0; }
-
-.subheader {
-  line-height: 1em; }
 
 .center {
   text-align: center; }
 
-.dotted {
-  padding-left: 17px; }
-  .dotted:before {
-    background-color: #2bb14d !important;
-    display: block;
-    float: left;
-    height: 8px;
-    left: -15px;
-    margin-right: -10px;
-    position: relative;
-    top: 12px;
-    width: 8px;
-    content: ' '; }
-
 .btns {
-  text-align: center;
-  max-width: 380px;
-  margin: 0 auto 10px; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .btns::after {
     clear: both;
     content: "";
     display: table; }
   .btns .btn {
-    float: left;
-    padding: 9px; }
-    .btns .btn:last-child {
-      float: right; }
+    width: 220px;
+    margin-bottom: 10px; }
+    .btns .btn:first-child {
+      margin-bottom: 20px; }
 
-section.first {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  section.first h1 {
-    margin: 0 0 10px; }
-  section.first .h2 {
-    margin: 0 0 30px; }
-  section.first .subheader {
+.scroll_down {
+  height: 28px;
+  width: 29px;
+  background-image: url(../img/scroll-down.png);
+  margin: 30px auto 0; }
+
+header {
+  padding: 10px 0 30px; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  header .logo {
+    height: auto;
+    width: auto; }
+    header .logo::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header .logo img {
+      height: auto;
+      width: 40%;
+      max-width: 224px;
+      float: left; }
+    header .logo .slogan {
+      float: right;
+      width: 60%;
+      max-width: 280px;
+      padding-left: 10px;
+      font-size: 0.8em;
+      line-height: 1.2em; }
+  header .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .contact .phone {
+      display: inline-block;
+      text-decoration: none;
+      color: #333333;
+      font-size: 2.4rem;
+      line-height: 40px;
+      text-align: center;
+      margin: 20px 0; }
+
+#first {
+  background-image: url(../img/first_block_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 20px; }
+  #first h1, #first .h2, #first div, #first p {
+    color: #ffffff; }
+  #first .h2 {
+    padding-bottom: 20px;
+    font-size: 1.6em;
+    line-height: 1.3em; }
+  #first h1 + div {
+    font-size: 1.2em;
+    line-height: 1.6em;
     margin-bottom: 30px; }
+
 section.second .circles {
   display: flex;
   align-items: center;
@@ -490,15 +487,20 @@ section.eighth .works {
   header .logo .slogan {
     font-size: 1.3em;
     line-height: 1.2em;
-    float: left; } }
+    float: left; }
+
+  #first {
+    padding: 55px 20px 35px; }
+    #first h1 {
+      font-size: 2.8rem;
+      line-height: 1.4em; } }
 @media (min-width: 850px) {
   header .logo {
-    float: left;
-    margin-top: 15px; }
+    float: left; }
   header .contact {
     float: right;
     flex-direction: column;
-    margin: 10px 0 0; }
+    margin: 0; }
     header .contact .phone {
       margin: 0 0 10px;
       font-size: 2.1em;
@@ -507,12 +509,11 @@ section.eighth .works {
   header .logo {
     width: 50%; }
     header .logo .slogan {
-      font-size: 1.4em;
+      font-size: 1.1em;
       line-height: 1.2em; }
   header .contact {
     flex-direction: row;
-    height: 60px;
-    margin-top: 10px;
+    height: 55px;
     width: 50%;
     max-width: 50%; }
     header .contact .phone {
