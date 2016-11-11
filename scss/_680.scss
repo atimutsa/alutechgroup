@@ -1,20 +1,13 @@
 @media (min-width: 680px) {
   header {
-    .contact {
-      max-width: 570px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  section {
-    &.first {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
-    &.fifth {
-      .video_block {
-        padding-bottom: 50.9%;
+      .logo {
+          .slogan {
+              font-size: 1.3em;
+              line-height: 1.2em;
+              float: left
+          }
       }
-    }
+      .contact {
+      }
   }
 }

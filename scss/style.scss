@@ -2,29 +2,29 @@
 @import "fonts";
 
 @mixin border-radius($radius) {
-  border-radius: $radius;
-  -moz-border-radius:$radius;
-  -webkit-border-radius:$radius;
-  -o-border-radius:$radius;
-  -khtml-border-radius:$radius;
+    border-radius: $radius;
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+    -o-border-radius:$radius;
+    -khtml-border-radius:$radius;
 }
 @mixin box-sizing ($value) {
-  -webkit-box-sizing: $value;
-  -moz-box-sizing: $value;
-  box-sizing: $value;
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    box-sizing: $value;
 }
 @mixin box-shadow ($shadow){
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  -o-box-shadow: $shadow;
-  box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    box-shadow: $shadow;
 }
 @mixin gradient ($color1, $color2){
-  background: $color1; /* Old browsers */
-  background: -moz-linear-gradient(top, $color1 0%, $color2 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, $color1 0%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, $color1 0%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient(top, $color1 0%, $color2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $color1 0%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $color1 0%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
 }
 @include keyframes(menu-on) {
   from {
@@ -51,124 +51,125 @@
   box-sizing: border-box;
 }
 html {
-  font: 13px RobotoRegular, Arial, Helvetica, Verdana, sans-serif;
+    font: 13px RobotoRegular, Arial, Helvetica, Verdana, sans-serif;
 }
 *, *:after, *:before {
-  @include box-sizing(border-box);
-  @include transition(border-color 0.35s, background 0.35s);
+    @include box-sizing(border-box);
+    @include transition(border-color 0.35s, background 0.35s);
 }
 .clr {
-  clear: both;
-  height: 0px;
-  display: block;
+    clear: both;
+    height: 0px;
+    display: block;
 }
 body {
-  background: #ffffff url("../img/bg.jpg") repeat;
-  color: #333333;
-  margin: 0;
-  padding: 10px 0 0;
-  font-size: 1rem;
-  line-height: 2rem;
+    background: #ffffff url("../img/bg.jpg") repeat;
+    color: #333333;
+    margin: 0;
+    padding: 10px 0 0;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 p {
-  font-size: 1rem;
-  line-height: 1.4em;
+    font-size: 1rem;
+    line-height: 1.4em;
 }
 .line {
-  min-width: 320px;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 6px;
-  background: url(../img/line.png) repeat-x;
+    min-width: 320px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 6px;
+    background: url(../img/line.png) repeat-x;
 }
 .wrap {
-  @include clearfix;
-  min-width: 320px;
-  width: 90%;
-  max-width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-  @include box-shadow(0 7px 7px #cccccc);
-  background: #ffffff;
+    @include clearfix;
+    min-width: 320px;
+    width: 90%;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    @include box-shadow(0 7px 7px #cccccc);
+    background: #ffffff;
 }
 .btn {
-  @include border-radius(1px);
-  color: #fff;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px #CCC;
-  cursor: pointer;
-  padding: 9px 20px;
-  text-decoration: none;
-  border: 2px solid #fee31e;
-  font: normal 1rem RobotoBold, Arial;
-  @include gradient(#fbc330, #f68321);
-  @include transition(all linear .2s);
-  &.blue {
-    @include gradient(#3CB7E0, #0093C7);
-    border: 2px solid #72C9E5;
-  }
-  &.green {
-    @include gradient(#ADCC38, #2CB14E);
-    border: 2px solid #9ED2A3;
-  }
-  &.red {
-    @include gradient(#E42159, #A62161);
-    border: 2px solid #D390B0;
-  }
-  &:hover {
-    opacity: 0.8;
-  }
+    @include border-radius(1px);
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px #CCC;
+    cursor: pointer;
+    padding: 9px 40px;
+    text-decoration: none;
+    border: 2px solid #fee31e;
+    font: normal 1rem RobotoBold, Arial;
+    @include gradient(#fbc330, #f68321);
+    @include transition(all linear .2s);
+    &.blue {
+        @include gradient(#3CB7E0, #0093C7);
+        border: 2px solid #72C9E5;
+    }
+    &.green {
+        @include gradient(#ADCC38, #2CB14E);
+        border: 2px solid #9ED2A3;
+    }
+    &.red {
+        @include gradient(#E42159, #A62161);
+        border: 2px solid #D390B0;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
 }
 h1, .h1, h2, .h2, h3, .h3 {
-  @include clearfix;
+    @include clearfix;
 }
 .h1, h1 {
-  font-size: 2rem;
-  line-height: 1.2em;
-  margin: 20px 0;
-  font-family: RobotoBold, Arial, sans-serif;
-  font-weight: bold;
-  &.dotted {
-    &:before {
-      top: 10px;
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin: 20px 0;
+    font-family: RobotoBold, Arial, sans-serif;
+    font-weight: bold;
+    &.dotted {
+        &:before {
+            top: 10px;
+        }
     }
-  }
 }
 .h2, h2 {
-  font-size: 1.3rem;
-  margin: 10px 0;
-  &.dotted {
-    &:before {
-      top: 10px;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    &.dotted {
+        &:before {
+            top: 10px;
+        }
     }
-  }
 }
 header {
   @include clearfix;
   .logo {
-    @include size(100% auto);
-    @include clearfix;
-    padding-top: 10px;
-    img {
-      @include size(40% auto);
-      max-width: 253px;
-      float: left;
-      margin-top: 1px;
-    }
-    .slogan {
-      float: right;
-      width: 60%;
-      padding-left: 10px;
-      font-size: 0.8em;
-      line-height: 1.2em;
-    }
+      @include size(auto);
+      @include clearfix;
+	  margin-top: 10px;
+        img {
+            @include size(40% auto);
+            max-width: 224px;
+            float: left;
+            margin-top: 1px;
+        }
+        .slogan {
+            float: right;
+            width: 60%;
+            max-width: 280px;
+            padding-left: 10px;
+            font-size: 0.8em;
+            line-height: 1.2em;
+        }
   }
   .contact {
     display: flex;
@@ -187,38 +188,38 @@ header {
   }
 }
 .subheader {
-  line-height: 1em;
+    line-height: 1em;
 }
 .center {
-  text-align: center;
+    text-align: center;
 }
 .dotted {
-  padding-left: 17px;
-  &:before {
-    background-color: #2bb14d!important;
-    display: block;
-    float: left;
-    height: 8px;
-    left: -15px;
-    margin-right: -10px;
-    position: relative;
-    top: 12px;
-    width: 8px;
-    content: ' ';
-  }
+    padding-left: 17px;
+    &:before {
+        background-color: #2bb14d!important;
+        display: block;
+        float: left;
+        height: 8px;
+        left: -15px;
+        margin-right: -10px;
+        position: relative;
+        top: 12px;
+        width: 8px;
+        content: ' ';
+    }
 }
 .btns {
-  @include clearfix;
-  text-align: center;
-  max-width: 380px;
-  margin: 0 auto 10px;
-  .btn {
-    float: left;
-    padding: 9px;
-    &:last-child {
-      float: right;
+    @include clearfix;
+    text-align: center;
+    max-width: 380px;
+    margin: 0 auto 10px;
+    .btn {
+        float: left;
+        padding: 9px;
+        &:last-child {
+            float: right;
+        }
     }
-  }
 }
 section {
   &.first {
@@ -476,8 +477,11 @@ section {
 }
 
 @import "375";
+@import "480";
+@import "500";
 @import "570";
 @import "680";
 @import "768";
+@import "850";
 @import "940";
 @import "1024";

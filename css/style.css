@@ -141,7 +141,7 @@ p {
   border-radius: 2px;
   box-shadow: 1px 1px 3px #CCC;
   cursor: pointer;
-  padding: 9px 20px;
+  padding: 9px 40px;
   text-decoration: none;
   border: 2px solid #fee31e;
   font: normal 1rem RobotoBold, Arial;
@@ -197,44 +197,6 @@ p {
   .btn:hover {
     opacity: 0.8; }
 
-header::after {
-  clear: both;
-  content: "";
-  display: table; }
-header .logo {
-  height: auto;
-  width: 100%;
-  padding-top: 10px; }
-  header .logo::after {
-    clear: both;
-    content: "";
-    display: table; }
-  header .logo img {
-    height: auto;
-    width: 40%;
-    max-width: 253px;
-    float: left;
-    margin-top: 1px; }
-  header .logo .slogan {
-    float: right;
-    width: 60%;
-    padding-left: 10px;
-    font-size: 0.8em;
-    line-height: 1.2em; }
-header .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  header .contact .phone {
-    display: inline-block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 2.4rem;
-    line-height: 40px;
-    text-align: center;
-    margin: 20px 0; }
-
 h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
   clear: both;
   content: "";
@@ -254,6 +216,45 @@ h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
   margin: 10px 0; }
   .h2.dotted:before, h2.dotted:before {
     top: 10px; }
+
+header::after {
+  clear: both;
+  content: "";
+  display: table; }
+header .logo {
+  height: auto;
+  width: auto;
+  margin-top: 10px; }
+  header .logo::after {
+    clear: both;
+    content: "";
+    display: table; }
+  header .logo img {
+    height: auto;
+    width: 40%;
+    max-width: 224px;
+    float: left;
+    margin-top: 1px; }
+  header .logo .slogan {
+    float: right;
+    width: 60%;
+    max-width: 280px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    line-height: 1.2em; }
+header .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header .contact .phone {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 2.4rem;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0; }
 
 .subheader {
   line-height: 1em; }
@@ -457,43 +458,25 @@ section.eighth .works {
   width: 90%;
   margin: 0 auto; }
 
-@media (min-width: 375px) {
-  header .slogan {
-    font-size: 1.8rem;
-    margin: 30px auto; } }
+@media (min-width: 480px) {
+  header .logo .slogan {
+    font-size: 1em; } }
+@media (min-width: 500px) {
+  header .logo .slogan {
+    font-size: 1em; } }
 @media (min-width: 570px) {
-  .wrap {
-    padding: 20px 20px 30px; }
-
-  .btns + p {
-    width: 70%;
-    max-width: 500px;
-    margin: 0 auto; }
-
-  section.first {
-    padding-top: 60px;
-    padding-bottom: 60px; }
-  section.second .circles {
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: center; }
-    section.second .circles .circle {
-      width: 50%;
-      padding: 0 20px; }
-  section.fifth .video_block {
-    padding-bottom: 49.8%; }
-
-  header .logo img {
-    width: 33%; }
-  header .slogan {
-    font-size: 2rem;
-    line-height: 1.2em;
-    margin: 30px auto; }
+  header .logo .slogan {
+    font-size: 1.4em;
+    line-height: 1.1em;
+    float: left; }
   header .contact {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 40px; }
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 40px auto 0; }
     header .contact .phone {
       margin: 0; }
     header .contact .btn {
@@ -504,88 +487,35 @@ section.eighth .works {
   .advantages .item .txt {
     margin: 0 0 0 100px; } }
 @media (min-width: 680px) {
-  header .contact {
-    max-width: 570px;
-    margin-left: auto;
-    margin-right: auto; }
-
-  section.first {
-    padding-top: 70px;
-    padding-bottom: 70px; }
-  section.fifth .video_block {
-    padding-bottom: 50.9%; } }
-@media (min-width: 768px) {
-  body {
-    padding: 20px 0 0; }
-
-  section.first .subheader {
-    margin-bottom: 50px; }
-  section.second .h1 + p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center; }
-  section.second .circles {
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    justify-content: center;
-    max-width: 800px;
-    margin: 50px auto 0; }
-    section.second .circles .circle {
-      width: 33%;
-      padding: 0 20px; }
-  section.third .advantages {
-    flex-wrap: wrap;
-    flex-direction: row; }
-    section.third .advantages .item {
-      width: 50%; }
-  section.fifth .video_block {
-    padding-bottom: 44.7%;
-    margin: 30px auto; }
-  section.sixth .product_list .product {
-    display: flex;
-    flex-direction: row-reverse; }
-    section.sixth .product_list .product .img {
-      width: 50%; }
-    section.sixth .product_list .product .txt {
-      width: 50%;
-      margin-right: 20px; }
-      section.sixth .product_list .product .txt .desc .price {
-        float: none; }
-
-  header .slogan {
-    font-size: 2.2rem;
-    line-height: 1.4em;
-    margin: 50px auto;
-    width: 80%; } }
-@media (min-width: 940px) {
-  header .slogan {
-    font-size: 3rem;
+  header .logo .slogan {
+    font-size: 1.3em;
     line-height: 1.2em;
-    margin: 70px auto; }
-  header .contact {
-    margin: 0 auto 40px; }
-
-  section.first {
-    padding: 90px 20px; }
-    section.first h1 {
-      font-size: 2.2rem; }
-  section.fifth .video_block {
-    padding-bottom: 24.5%;
-    float: right;
-    width: 50%;
-    margin: 0; }
-  section.fifth .advice {
+    float: left; } }
+@media (min-width: 850px) {
+  header .logo {
     float: left;
-    width: 50%;
-    padding-right: 10px; } }
-@media (min-width: 1024px) {
+    margin-top: 15px; }
   header .contact {
-    margin: 0 auto 200px; }
-
-  section.sixth .product_list .product .img {
-    width: 35%; }
-  section.sixth .product_list .product .txt {
-    width: 65%; } }
+    float: right;
+    flex-direction: column;
+    margin: 10px 0 0; }
+    header .contact .phone {
+      margin: 0 0 10px;
+      font-size: 2.1em;
+      line-height: 1em; } }
+@media (min-width: 1024px) {
+  header .logo {
+    width: 50%; }
+    header .logo .slogan {
+      font-size: 1.4em;
+      line-height: 1.2em; }
+  header .contact {
+    flex-direction: row;
+    height: 60px;
+    margin-top: 10px;
+    width: 50%;
+    max-width: 50%; }
+    header .contact .phone {
+      margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

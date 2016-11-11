@@ -1,0 +1,21 @@
+@media (min-width: 850px) {
+  header {
+      .logo {
+		  float: left;
+		  margin-top: 15px;
+		  .slogan {
+		  }
+	  }
+      
+    .contact {
+        float: right;
+        flex-direction: column;
+        margin: 10px 0 0;
+        .phone {
+            margin: 0 0 10px;
+            font-size: 2.1em;
+            line-height: 1em;
+        }
+    }
+  }
+}

@@ -1,3 +1,6 @@
+<?php
+$tel = "8-800-707-74-31";
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -27,7 +30,7 @@
             <div class="slogan">Установка рольставней, рулонных и секционных ворот Алютех в Москве и области</div>
         </div>
         <div class="contact">
-            <a href="tel:+78007077431" class="phone">8-800-707-74-31</a>
+            <a href="tel:+78007077431" class="phone"><?=$tel;?></a>
             <a href="" class="btn pop_up" data-target="callback">Перезвоните мне</a>
         </div>
     </header>
