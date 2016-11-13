@@ -107,7 +107,7 @@ p {
 .line {
   min-width: 320px;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
   height: 6px;
   background: url(../img/line.png) repeat-x; }
@@ -115,9 +115,7 @@ p {
 .wrap {
   min-width: 320px;
   width: 90%;
-  max-width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 1260px;
   margin: 0 auto;
   -webkit-box-shadow: 0 7px 7px #cccccc;
   -moz-box-shadow: 0 7px 7px #cccccc;
@@ -225,10 +223,6 @@ h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .btns::after {
-    clear: both;
-    content: "";
-    display: table; }
   .btns .btn {
     width: 220px;
     margin-bottom: 10px; }
@@ -242,7 +236,7 @@ h1::after, .h1::after, h2::after, .h2::after, h3::after, .h3::after {
   margin: 30px auto 0; }
 
 header {
-  padding: 10px 0 30px; }
+  padding: 10px 10px 30px; }
   header::after {
     clear: both;
     content: "";
@@ -294,7 +288,7 @@ header {
   #first h1 + div {
     font-size: 1.2em;
     line-height: 1.6em;
-    margin-bottom: 30px; }
+    margin: 20px 0 30px; }
 
 section.second .circles {
   display: flex;
@@ -462,6 +456,12 @@ section.eighth .works {
   header .logo .slogan {
     font-size: 1em; } }
 @media (min-width: 570px) {
+  .wrap {
+    width: 95%; }
+
+  .line {
+    width: 95%; }
+
   header .logo .slogan {
     font-size: 1.4em;
     line-height: 1.1em;
@@ -484,6 +484,17 @@ section.eighth .works {
   .advantages .item .txt {
     margin: 0 0 0 100px; } }
 @media (min-width: 680px) {
+  .btns {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 620px;
+    margin: 0 auto 10px; }
+    .btns .btn {
+      margin: 0; }
+      .btns .btn:first-child {
+        margin: 0; }
+
   header .logo .slogan {
     font-size: 1.3em;
     line-height: 1.2em;
@@ -506,17 +517,28 @@ section.eighth .works {
       font-size: 2.1em;
       line-height: 1em; } }
 @media (min-width: 1024px) {
-  header .logo {
-    width: 50%; }
-    header .logo .slogan {
-      font-size: 1.1em;
-      line-height: 1.2em; }
-  header .contact {
-    flex-direction: row;
-    height: 55px;
-    width: 50%;
-    max-width: 50%; }
-    header .contact .phone {
-      margin: 0; } }
+  body {
+    padding: 30px 0 0; }
+
+  header {
+    padding: 20px; }
+    header .logo {
+      width: 50%; }
+      header .logo .slogan {
+        font-size: 1.1em;
+        line-height: 1.2em; }
+    header .contact {
+      flex-direction: row;
+      height: 55px;
+      width: 47%;
+      max-width: 47%; }
+      header .contact .phone {
+        margin: 0; }
+
+  #first h1 {
+    font-size: 3.8rem; }
+  #first .h2 {
+    font-size: 2.4em;
+    font-family: RobotoBold, Arial, sans-serif; } }
 
 /*# sourceMappingURL=style.css.map */
