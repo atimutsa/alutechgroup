@@ -294,21 +294,32 @@ header {
 #second {
   background-color: #e8e8e8;
   padding: 35px 20px 70px; }
+  #second .h1 {
+    font-size: 1.6rem;
+    line-height: 1.4em; }
   #second .circles {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 30px; }
     #second .circles .circle {
-      width: 90%;
+      width: 100%;
       margin: 0 0 30px;
       display: inline-block;
       position: relative;
       text-align: center;
-      line-height: 1.2; }
+      line-height: 1.2;
+      padding: 30px 10px;
+      border: 1px solid #cccccc;
+      background: #ffffff;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -khtml-border-radius: 4px; }
       #second .circles .circle strong {
         position: absolute;
-        top: 30px;
+        top: 60px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -320,38 +331,42 @@ header {
         margin-top: 12px;
         font-size: 1rem;
         line-height: 1.4em; }
-    #second .circles + div {
-      margin-bottom: 30px; }
 
-section.third .advantages {
-  display: flex;
-  flex-direction: column; }
-  section.third .advantages .item {
-    width: 100%;
-    position: relative;
-    margin: 30px 0; }
-    section.third .advantages .item::before {
-      content: ' ';
-      height: 100px;
-      width: 100px;
-      display: block;
-      float: left; }
-    section.third .advantages .item:nth-child(1)::before {
-      background: url("../img/ico_1.jpg") no-repeat;
-      height: 90px; }
-    section.third .advantages .item:nth-child(2)::before {
-      background: url("../img/ico_2.jpg") no-repeat; }
-    section.third .advantages .item:nth-child(3)::before {
-      background: url("../img/ico_5.jpg") no-repeat; }
-    section.third .advantages .item:nth-child(4)::before {
-      background: url("../img/ico_6.jpg") no-repeat; }
-    section.third .advantages .item .title {
-      font-family: RobotoBold, Arial, sans-serif;
-      font-size: 1.3rem;
-      line-height: 1.1em;
-      margin-bottom: 10px; }
-section.third .btns + p {
-  margin-bottom: 30px; }
+#third {
+  padding: 30px 10px; }
+  #third .h1 {
+    font-size: 1.6rem;
+    line-height: 1.4em; }
+  #third .advantages {
+    display: flex;
+    flex-direction: column; }
+    #third .advantages .item {
+      width: 100%;
+      position: relative;
+      margin: 30px 0; }
+      #third .advantages .item::before {
+        content: ' ';
+        height: 100px;
+        width: 100px;
+        display: block;
+        float: left; }
+      #third .advantages .item:nth-child(1)::before {
+        background: url("../img/ico_1.jpg") no-repeat;
+        height: 90px; }
+      #third .advantages .item:nth-child(2)::before {
+        background: url("../img/ico_2.jpg") no-repeat; }
+      #third .advantages .item:nth-child(3)::before {
+        background: url("../img/ico_5.jpg") no-repeat; }
+      #third .advantages .item:nth-child(4)::before {
+        background: url("../img/ico_6.jpg") no-repeat; }
+      #third .advantages .item .title {
+        font-family: RobotoBold, Arial, sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.1em;
+        margin-bottom: 10px; }
+  #third .btns + p {
+    margin-bottom: 30px; }
+
 section.fourth table {
   border-collapse: collapse;
   background: #F6F6F3;
@@ -422,31 +437,6 @@ section.fifth ul {
       color: #727272; }
 section.fifth p.entry {
   margin-bottom: 20px; }
-section.sixth .product_list .product {
-  margin-bottom: 60px; }
-  section.sixth .product_list .product::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.sixth .product_list .product .img {
-    -webkit-transition: all linear 0.2s;
-    -moz-transition: all linear 0.2s;
-    transition: all linear 0.2s;
-    text-align: center; }
-    section.sixth .product_list .product .img:hover {
-      opacity: 0.8; }
-  section.sixth .product_list .product .title {
-    font-size: 1.6rem;
-    font-family: RobotoBold, Arial, sans-serif;
-    font-weight: bold; }
-  section.sixth .product_list .product .desc p {
-    margin-bottom: 10px; }
-  section.sixth .product_list .product .price {
-    font-size: 1.6rem;
-    font-family: RobotoBold, Arial, sans-serif;
-    font-weight: bold;
-    color: #f57d1f;
-    float: right; }
 section.seventh .calc + p {
   max-width: 684px;
   margin: 0 auto 30px; }
@@ -537,7 +527,14 @@ section.eighth .works {
       line-height: 1em; } }
 @media (min-width: 940px) {
   #first h1, #first .h1 {
-    font-size: 2.4rem; } }
+    font-size: 2.4rem; }
+
+  #second .circles {
+    flex-direction: row;
+    justify-content: space-around; }
+    #second .circles .circle {
+      width: 32%;
+      min-height: 270px; } }
 @media (min-width: 1024px) {
   body {
     padding: 30px 0 0; }
@@ -561,6 +558,10 @@ section.eighth .works {
     font-size: 3.4rem; }
   #first .h2 {
     font-size: 2.4em;
-    font-family: RobotoBold, Arial, sans-serif; } }
+    font-family: RobotoBold, Arial, sans-serif; }
+
+  #second .circles .circle {
+    width: 30%;
+    min-height: 260px; } }
 
 /*# sourceMappingURL=style.css.map */

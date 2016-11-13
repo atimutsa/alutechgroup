@@ -230,21 +230,29 @@ header {
 #second {
   background-color: #e8e8e8;
   padding: 35px 20px 70px;
+  .h1 {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
   .circles {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
     .circle {
-      width: 90%;
+      width: 100%;
       margin: 0 0 30px;
       display: inline-block;
       position: relative;
       text-align: center;
       line-height: 1.2;
+      padding: 30px 10px;
+      border: 1px solid #cccccc;
+      background: #ffffff;
+      @include border-radius (4px);
       strong {
         position: absolute;
-        top: 30px;
+        top: 60px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -259,62 +267,64 @@ header {
         line-height: 1.4em;
       }
     }
-    & + div {
+  }
+}
+#third {
+  padding: 30px 10px;
+  .h1 {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    .item {
+      width: 100%;
+      position: relative;
+      margin: 30px 0;
+      &::before {
+        content: ' ';
+        height: 100px;
+        width: 100px;
+        display: block;
+        float: left;
+      }
+      &:nth-child(1){
+        &::before {
+          background: url("../img/ico_1.jpg") no-repeat;
+          height: 90px;
+        }
+      }
+      &:nth-child(2){
+        &::before {
+          background: url("../img/ico_2.jpg") no-repeat;
+        }
+      }
+      &:nth-child(3){
+        &::before {
+          background: url("../img/ico_5.jpg") no-repeat;
+        }
+      }
+      &:nth-child(4){
+        &::before {
+          background: url("../img/ico_6.jpg") no-repeat;
+        }
+      }
+      .title {
+        font-family: RobotoBold, Arial, sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.1em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .btns {
+    & + p {
       margin-bottom: 30px;
     }
   }
 }
 section {
-  &.third {
-    .advantages {
-      display: flex;
-      flex-direction: column;
-      .item {
-        width: 100%;
-        position: relative;
-        margin: 30px 0;
-        &::before {
-          content: ' ';
-          height: 100px;
-          width: 100px;
-          display: block;
-          float: left;
-        }
-        &:nth-child(1){
-          &::before {
-            background: url("../img/ico_1.jpg") no-repeat;
-            height: 90px;
-          }
-        }
-        &:nth-child(2){
-          &::before {
-            background: url("../img/ico_2.jpg") no-repeat;
-          }
-        }
-        &:nth-child(3){
-          &::before {
-            background: url("../img/ico_5.jpg") no-repeat;
-          }
-        }
-        &:nth-child(4){
-          &::before {
-            background: url("../img/ico_6.jpg") no-repeat;
-          }
-        }
-        .title {
-          font-family: RobotoBold, Arial, sans-serif;
-          font-size: 1.3rem;
-          line-height: 1.1em;
-          margin-bottom: 10px;
-        }
-      }
-    }
-    .btns {
-      & + p {
-        margin-bottom: 30px;
-      }
-    }
-  }
   &.fourth {
     table {
       border-collapse: collapse;
@@ -420,38 +430,6 @@ section {
     p {
       &.entry {
         margin-bottom: 20px;
-      }
-    }
-  }
-  &.sixth {
-    .product_list {
-      .product {
-        margin-bottom: 60px;
-        @include clearfix;
-        .img {
-          @include transition(all linear .2s);
-          text-align: center;
-          &:hover {
-            opacity: 0.8;
-          }
-        }
-        .title {
-          font-size: 1.6rem;
-          font-family: RobotoBold, Arial, sans-serif;
-          font-weight: bold;
-        }
-        .desc {
-          p {
-            margin-bottom: 10px;
-          }
-        }
-        .price {
-          font-size: 1.6rem;
-          font-family: RobotoBold, Arial, sans-serif;
-          font-weight: bold;
-          color: #f57d1f;
-          float: right;
-        }
       }
     }
   }

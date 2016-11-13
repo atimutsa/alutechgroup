@@ -8,4 +8,14 @@
       font-size: 2.4rem;
     }
   }
+  #second {
+    .circles {
+      flex-direction: row;
+      justify-content: space-around;
+      .circle {
+        width: 32%;
+        min-height: 270px;
+      }
+    }
+  }
 }

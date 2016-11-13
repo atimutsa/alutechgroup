@@ -21,13 +21,21 @@
 		  }
 	  }
 	}
-	#first {
-		h1 {
-			font-size: 3.4rem;
-		}
-		.h2 {
-			font-size: 2.4em;
-			font-family: RobotoBold, Arial, sans-serif;
-		}
-	}
+  #first {
+      h1 {
+          font-size: 3.4rem;
+      }
+      .h2 {
+          font-size: 2.4em;
+          font-family: RobotoBold, Arial, sans-serif;
+      }
+  }
+  #second {
+    .circles {
+      .circle {
+        width: 30%;
+        min-height: 260px;
+      }
+    }
+  }
 }

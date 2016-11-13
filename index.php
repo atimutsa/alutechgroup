@@ -70,6 +70,52 @@
         </div>
     </div>
 </section>
+<section class="wrap">
+    <div id="third">
+        <div class="h1 center">Мы предлагаем оригинальную продукцию АЛЮТЕХ</div>
+        <div class="product_list">
+            <div class="product">
+                <div class="img">
+                    <img src="/img/rollet.jpg" alt="Алюмииневые рольставни на окнах"/>
+                </div>
+                <div class="txt">
+                    <p class="title">Роллеты</p>
+                    <div class="desc">
+                        <p>Устанавливаются на дверные или оконные проёмы. Обеспечивают защиту от взлома, посторонних глаз и погодных условий.</p>
+                        <p>Обширный ассротимент. В ассортименте больше 10 000 наименований Разные цвета и конструкции ­­ алюминиевые, усиленные алюминиевые и роллетные решетки.</p>
+                        <div class="price">от 2 155 рублей</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img">
+                    <img src="/img/roll_gate.jpg" alt="Рулонные ворота для гаража"/>
+                </div>
+                <div class="txt">
+                    <p class="title">Рулонные ворота</p>
+                    <div class="desc">
+                        <p>Идеальное решение для торговых центров, складских помещений и частных гаражей, где подъезд не позволяет установить распашные ворота.</p>
+                        <p>Алюминиевый или стальной профиль изготавливается из более толстого по сравнению с обычными рольставнями металла.</p>
+                        <div class="price">от 11 697 рублей</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img">
+                    <img src="/img/sekc_gate.jpg" alt="Рулонные ворота для гаража"/>
+                </div>
+                <div class="txt">
+                    <p class="title">Секционные ворота</p>
+                    <div class="desc">
+                        <p>Преимущества секционных ворот в повышенной теплоизоляции, надежной и безопасной работе, высокой степени герметизации проема.</p>
+                        <p>Толщина панели ­­ 45 мм, им не страшен никакой ветер, влага или колебания температур.</p>
+                        <div class="price">от 26 429 рублей</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="wrap third">
     <div class="h1">Рольставни и секционные ворота решают сразу 4 ваши проблемы:</div>
     <div class="advantages">
@@ -186,50 +232,6 @@
         </ul>
     </div>
 </section>
-<section class="wrap sixth">
-    <div class="h1 center">Мы предлагаем оригинальную продукцию АЛЮТЕХ</div>
-    <div class="product_list">
-        <div class="product">
-            <div class="img">
-                <img src="/img/rollet.jpg" alt="Алюмииневые рольставни на окнах"/>
-            </div>
-            <div class="txt">
-                <p class="title">Роллеты</p>
-                <div class="desc">
-                    <p>Устанавливаются на дверные или оконные проёмы. Обеспечивают защиту от взлома, посторонних глаз и погодных условий.</p>
-                    <p>Обширный ассротимент. В ассортименте больше 10 000 наименований Разные цвета и конструкции ­­ алюминиевые, усиленные алюминиевые и роллетные решетки.</p>
-                    <div class="price">от 2 155 рублей</div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="img">
-                <img src="/img/roll_gate.jpg" alt="Рулонные ворота для гаража"/>
-            </div>
-            <div class="txt">
-                <p class="title">Рулонные ворота</p>
-                <div class="desc">
-                    <p>Идеальное решение для торговых центров, складских помещений и частных гаражей, где подъезд не позволяет установить распашные ворота.</p>
-                    <p>Алюминиевый или стальной профиль изготавливается из более толстого по сравнению с обычными рольставнями металла.</p>
-                    <div class="price">от 11 697 рублей</div>
-                </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="img">
-                <img src="/img/sekc_gate.jpg" alt="Рулонные ворота для гаража"/>
-            </div>
-            <div class="txt">
-                <p class="title">Секционные ворота</p>
-                <div class="desc">
-                    <p>Преимущества секционных ворот в повышенной теплоизоляции, надежной и безопасной работе, высокой степени герметизации проема.</p>
-                    <p>Толщина панели ­­ 45 мм, им не страшен никакой ветер, влага или колебания температур.</p>
-                    <div class="price">от 26 429 рублей</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="wrap seventh">
     <div class="h1 center">Рассчитайте сами стоимость роллет или секционных ворот</div>
 <!--    <div class="calc"></div>-->
@@ -334,19 +336,6 @@
         </a>
     </div>
 </section>
-<section class="wrap nineth">
-    <div class="h1 center">Ваши преимущества при заказе на этом сайте</div>
-</section>
-<div class="pop_up_form zamer">
-    <div class="title">Запрос на бесплатный замер</div>
-    <form action="">
-        <input type="text" name="name" placeholder="Ваше имя">
-        <input type="text" name="phone" placeholder="Ваш телефон">
-        <input type="text" name="time" placeholder="Удобное время звонка">
-        <button type="submit">Отправить</button>
-    </form>
-</div>
-</body>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="http://www.alutech-group.com/app/calc/calcLoader.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
@@ -354,4 +343,5 @@
 <script type="text/javascript" src="/js/responsive-tables.js"></script>
 <script type="text/javascript" src="/js/jquery.chocolat.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
+</body>
 </html>
