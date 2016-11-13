@@ -125,14 +125,15 @@ p {
     }
 }
 h1, .h1, h2, .h2, h3, .h3 {
-    @include clearfix;
+  @include clearfix;
 }
 .h1, h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.2em;
     padding: 20px 0;
     font-family: RobotoBold, Arial, sans-serif;
     font-weight: bold;
+  text-transform: uppercase;
     &.dotted {
         &:before {
             top: 10px;
@@ -226,42 +227,44 @@ header {
 		}
 	}
 }
-section {
-  &.second {
-    .circles {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 30px;
-      .circle {
-        width: 90%;
-        margin: 0 0 30px;
-        display: inline-block;
-        position: relative;
+#second {
+  background-color: #e8e8e8;
+  padding: 35px 20px 70px;
+  .circles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    .circle {
+      width: 90%;
+      margin: 0 0 30px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      line-height: 1.2;
+      strong {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
         text-align: center;
-        line-height: 1.2;
-        strong {
-          position: absolute;
-          top: 30px;
-          left: 0;
-          width: 100%;
-          text-align: center;
-          line-height: 40px;
-          font-size: 30px;
-        }
-        span {
-          display: block;
-          color: #333333;
-          margin-top: 12px;
-          font-size: 1rem;
-          line-height: 1.4em;
-        }
+        line-height: 40px;
+        font-size: 30px;
       }
-      & + div {
-        margin-bottom: 30px;
+      span {
+        display: block;
+        color: #333333;
+        margin-top: 12px;
+        font-size: 1rem;
+        line-height: 1.4em;
       }
     }
+    & + div {
+      margin-bottom: 30px;
+    }
   }
+}
+section {
   &.third {
     .advantages {
       display: flex;

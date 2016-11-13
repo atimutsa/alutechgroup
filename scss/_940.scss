@@ -1,6 +1,11 @@
 @media (min-width: 940px) {
-    header {
-        .logo {
-        }
+  header {
+    .logo {
+    }
+  }
+  #first {
+    h1, .h1 {
+      font-size: 2.4rem;
+    }
   }
 }

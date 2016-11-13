@@ -45,27 +45,29 @@
    		<div class="scroll_down"></div>
     </div>
 </section>
-<section class="wrap second">
-    <div class="h1 center">Закажите рольставни легендарного качества</div>
-    <p>Компания АЛЮТЕХ - это 6 производственных и 20 сбытовых предприятий в Европе и странах СНГ. Продукцию АЛЮТЕХ устанавливают в 65 странах мира и она уже завоевалаболее 100 дипломов за качество и <strong>внедрение технологий повышенной безопасности.</strong></p>
-    <div class="circles">
-        <div class="first circle">
-            <strong></strong>
-    <span>Контрольных методов применяют технологии АЛЮТЕХ, чтобы подтвердить качество каждой партии продукции</span>
-        </div>
+<section class="wrap">
+    <div id="second">
+        <div class="h1 center">Закажите рольставни легендарного качества</div>
+        <p>Компания АЛЮТЕХ - это 6 производственных и 20 сбытовых предприятий в Европе и странах СНГ. Продукцию АЛЮТЕХ устанавливают в 65 странах мира и она уже завоевалаболее 100 дипломов за качество и <strong>внедрение технологий повышенной безопасности.</strong></p>
+        <div class="circles">
+            <div class="first circle">
+                <strong></strong>
+                <span>Контрольных методов применяют технологии АЛЮТЕХ, чтобы подтвердить качество каждой партии продукции</span>
+            </div>
 
-        <div class="second circle">
-            <strong></strong>
-            <span>Европейских центров сертификации подтверждают качество АЛЮТЕХ. Среди них CSTB (Франция), Wintech (Великобритания), Rosenheim (Германия).</span>
-        </div>
+            <div class="second circle">
+                <strong></strong>
+                <span>Европейских центров сертификации подтверждают качество АЛЮТЕХ. Среди них CSTB (Франция), Wintech (Великобритания), Rosenheim (Германия).</span>
+            </div>
 
-        <div class="third circle">
-            <strong></strong>
-            <span>Параметров качества отслеживают на производстве АЛЮТЕХ, чтобы свести к минимуму вероятность брака.</span>
+            <div class="third circle">
+                <strong></strong>
+                <span>Параметров качества отслеживают на производстве АЛЮТЕХ, чтобы свести к минимуму вероятность брака.</span>
+            </div>
         </div>
-    </div>
-    <div class="center">
-        <a class="btn red"  data-target="calc" href="">Рассчитать цену</a>
+        <div class="center">
+            <a class="btn red"  data-target="calc" href="">Рассчитать цену</a>
+        </div>
     </div>
 </section>
 <section class="wrap third">
