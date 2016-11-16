@@ -452,6 +452,7 @@
 <script type="text/javascript" src="/js/circle-progress.min.js"></script>
 <script type="text/javascript" src="/js/responsive-tables.js"></script>
 <script type="text/javascript" src="/js/jquery.chocolat.js"></script>
+<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
 </body>
 </html>

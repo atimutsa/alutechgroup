@@ -104,6 +104,8 @@ $( document ).ready(function() {
         fullScreen: true,
         loop: true
     });
+	
+	$("input[name=phone]").mask("+7 (999) 999-9999");
 
     var client = {
 
