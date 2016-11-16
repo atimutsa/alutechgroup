@@ -28,4 +28,69 @@
 			line-height: 1.4em;
 		}
 	}
+	#second {
+		.circles {
+			flex-direction: row;
+			flex-wrap: wrap;
+    		justify-content: space-around;
+			.circle {
+				width: 48%;
+				margin: 0 0 10px;
+				min-height: 250px;
+			}
+		}
+	}
+	#third {
+		.product_list {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			.product {
+				width: 48%;
+			}
+		}
+	}
+	#fifth {
+		.advantages {
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.item {
+				width: 48%;
+			}
+		}
+	}
+	#nineth {
+		.flex {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		.item {
+			width: 48%;
+			.img {
+				margin: 10px auto;
+			}
+		}
+	}
+	footer {
+		.flex {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		p {
+			font-size: 1.1rem;
+			&.item_1 {
+				text-align: left;
+			}
+			&.item_2 {
+				white-space: nowrap;
+				padding: 0 20px;
+			}
+			&.item_3 {
+				text-align: right;
+			}
+		}
+	}
 }

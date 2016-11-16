@@ -107,8 +107,6 @@ $( document ).ready(function() {
 
     var client = {
 
-        amount: 1,
-
         initialize: function () {
             this.setUpListeners();
         },
@@ -118,26 +116,34 @@ $( document ).ready(function() {
             $(document).on('click', '.pop_up', this.showOverlay);
             $(document).on('click', '#dark_overlay', this.deleteOverlay);
             $(document).on('click', '.close', this.deleteOverlay);
+            $(document).on('submit', 'form', this.submitForm);
         },
 
         checkBtn: function(e){
             var action = $(this).data('target');
             switch (action){
                 case 'calc':
-                    var destination = $('section.seventh').offset().top;
+                    var destination = $('#seventh').offset().top;
                     $('html,body').animate( { scrollTop: destination }, 1100 );
                     break;
                 case 'zamer':
-
+					client.showFormZamer(e);
                     break;
+				case 'callback':
+					client.showFormCallback(e);
+					break;
             }
             e.preventDefault();
         },
 
         showFormZamer: function(e){
-            client.showOverlay();
-            $('.pop_up_form.zamer').show();
-            e.preventDefault();
+			$('.pop_up_form.zamer').show();
+			e.preventDefault();
+        },
+
+        showFormCallback: function(e){
+			$('.pop_up_form.callback').show();
+			e.preventDefault();
         },
 
         deleteOverlay: function(){
@@ -148,7 +154,7 @@ $( document ).ready(function() {
         },
 
         hideForm: function() {
-            $('.popup').hide();
+            $('.pop_up_form').hide();
         },
 
         showOverlay: function(){
@@ -168,16 +174,59 @@ $( document ).ready(function() {
                 })
                 .fadeIn(200);
         },
+		
+		submitForm: function(e){
+			var form = $(this),
+                formData = form.serialize();
 
-        showForm: function(type){
-            var destination = $('#left_tickets').offset().top;
-            $('html,body').animate( { scrollTop: destination-130 }, 1100 );
-            if(type == 'buy'){
-                $('.popup.buy').show();
-            } else {
-                var val = $('.donate_item').find('input').val();
-                $('.popup.donate').show().find('.price').text(val + ' ������');
-            }
+            if ( client.validateForm(form) === false )
+                return false;
+
+            console.log('GO AJAX! ==> ' + formData);
+			
+			$.ajax({
+                url: "/mail.php",
+                type: "POST",
+                data: formData,
+                dataType: "html",
+                success: function(data){
+                    form.html('<p>Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.</p><p>А пока вы можете посетить <a href="http://xn--80aleen8i.xn--p1ai/" target="_blank">наш сайт</a> и узнать много интересного про <a href="http://xn--80aleen8i.xn--p1ai/rolstavni/" target="_blank">рольставни</a> и <a href="http://xn--80aleen8i.xn--p1ai/vorota/garazhnye/" target="_blank">гаражные ворота</a></p>');
+                },
+                error: function( xhr, status, errorThrown ) {
+                    alert( "Sorry, there was a problem!" );
+                    console.log( "Error: " + errorThrown );
+                    console.log( "Status: " + status );
+                    console.dir( xhr );
+                }
+            });
+
+            e.preventDefault();
+		},
+		
+		validateForm: function(form) {
+
+            var inputs = form.find('input.required'),
+                textarea = form.find('textarea'),
+                valid = true;
+
+				inputs.each(function(index, el) {
+
+					var input = $(el),
+						val = $.trim( input.val() )
+					label = input.siblings('label'),
+						err = 'Обязательно для заполнения';
+					input.removeClass('error').siblings('.tip').text('');
+					
+					if ( val.length === 0 ) {
+						input.addClass('error').siblings('.tip').text(err);
+						valid = false;
+					}
+
+
+            });
+
+            return valid;
+
         }
     }
 
