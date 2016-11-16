@@ -1,21 +1,64 @@
 @media (min-width: 940px) {
-  header {
-    .logo {
-    }
-  }
-  #first {
-    h1, .h1 {
-      font-size: 2.4rem;
-    }
-  }
-  #second {
-    .circles {
-      flex-direction: row;
-      justify-content: space-around;
-      .circle {
-        width: 32%;
-        min-height: 270px;
-      }
-    }
-  }
+	#first {
+		h1, .h1 {
+		  font-size: 2.4rem;
+		}
+	}
+	#second {
+		.circles {
+		  flex-direction: row;
+		  justify-content: space-around;
+		  .circle {
+			width: 32%;
+			min-height: 270px;
+		  }
+		}
+	}
+	#sixth {
+		.flex {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+		.video_block {
+			width: 48%;
+			padding-bottom: 32.2%;
+		  iframe {
+			  height: 315px;
+		  }
+		}
+		.advice {
+			width: 48%;
+		}
+	}	
+	#nineth {
+		.flex {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		.item {
+			width: 33%;
+			max-width: 380px;
+			padding: 0 10px;
+			margin-bottom: 30px;
+			.img {
+				margin: 20px auto;
+			}
+		}
+	}
+	#thirteenth {
+		.flex {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.contact {
+			width: 40%;
+			p {
+				margin-bottom: 40px;
+			}
+		}
+		.ya_map {
+			width: 58%;
+		}
+	}
 }

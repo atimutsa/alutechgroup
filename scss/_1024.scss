@@ -33,9 +33,35 @@
   #second {
     .circles {
       .circle {
-        width: 30%;
-        min-height: 260px;
+		width: 30%;
+		min-height: 260px;
+		margin-bottom: 30px;
       }
     }
   }
+	#third {
+		.product_list {
+			justify-content: space-between;
+			.product {
+				width: 33%;
+				max-width: 400px;
+				.desc {
+					min-height: 160px;
+				}
+			}
+		}
+	}
+	#sixth {
+		.video_block {
+			padding-bottom: 30%;
+		}
+	}
+	#thirteenth {
+		.contact {
+			width: 27%;
+		}
+		.ya_map {
+			width: 71%;
+		}
+	}
 }
