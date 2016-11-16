@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="alutech.group" />
+  <component name="PublishConfigData" serverName="alutech.group" promptOnLocalOverwrite="false">
+    <serverData>
+      <paths name="alutetech_remote">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/.git" />
+            <excludedPath local="true" path="$PROJECT_DIR$/bourbon" />
+            <excludedPath path="/.idea" />
+            <excludedPath path="/.sass-cache" />
+            <excludedPath path="/bourbon" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>

@@ -270,6 +270,15 @@ header {
   }
 }
 #third {
+  .product_list {
+    .product {
+      .title {
+        font: bold 1.6rem/1em RobotoBold, Arial, sans-serif;
+      }
+    }
+  }
+}
+#sixth {
   padding: 30px 10px;
   .h1 {
     font-size: 1.6rem;

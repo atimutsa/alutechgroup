@@ -332,39 +332,42 @@ header {
         font-size: 1rem;
         line-height: 1.4em; }
 
-#third {
+#third .product_list .product .title {
+  font: bold 1.6rem/1em RobotoBold, Arial, sans-serif; }
+
+#sixth {
   padding: 30px 10px; }
-  #third .h1 {
+  #sixth .h1 {
     font-size: 1.6rem;
     line-height: 1.4em; }
-  #third .advantages {
+  #sixth .advantages {
     display: flex;
     flex-direction: column; }
-    #third .advantages .item {
+    #sixth .advantages .item {
       width: 100%;
       position: relative;
       margin: 30px 0; }
-      #third .advantages .item::before {
+      #sixth .advantages .item::before {
         content: ' ';
         height: 100px;
         width: 100px;
         display: block;
         float: left; }
-      #third .advantages .item:nth-child(1)::before {
+      #sixth .advantages .item:nth-child(1)::before {
         background: url("../img/ico_1.jpg") no-repeat;
         height: 90px; }
-      #third .advantages .item:nth-child(2)::before {
+      #sixth .advantages .item:nth-child(2)::before {
         background: url("../img/ico_2.jpg") no-repeat; }
-      #third .advantages .item:nth-child(3)::before {
+      #sixth .advantages .item:nth-child(3)::before {
         background: url("../img/ico_5.jpg") no-repeat; }
-      #third .advantages .item:nth-child(4)::before {
+      #sixth .advantages .item:nth-child(4)::before {
         background: url("../img/ico_6.jpg") no-repeat; }
-      #third .advantages .item .title {
+      #sixth .advantages .item .title {
         font-family: RobotoBold, Arial, sans-serif;
         font-size: 1.3rem;
         line-height: 1.1em;
         margin-bottom: 10px; }
-  #third .btns + p {
+  #sixth .btns + p {
     margin-bottom: 30px; }
 
 section.fourth table {
